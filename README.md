@@ -1,11 +1,11 @@
-# Laravel File Errors [![Build Status](https://travis-ci.com/mpyw/laravel-file-errors.svg?branch=master)](https://travis-ci.com/mpyw/laravel-file-errors) [![Coverage Status](https://coveralls.io/repos/github/mpyw/laravel-file-errors/badge.svg?branch=master)](https://coveralls.io/github/mpyw/laravel-file-errors?branch=master) [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/mpyw/laravel-file-errors/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/mpyw/laravel-file-errors/?branch=master)
+# Laravel File Errors [![Build Status](https://github.com/mpyw/laravel-file-errors/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/mpyw/laravel-file-errors/actions) [![Coverage Status](https://coveralls.io/repos/github/mpyw/laravel-file-errors/badge.svg?branch=master)](https://coveralls.io/github/mpyw/laravel-file-errors?branch=master) [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/mpyw/laravel-file-errors/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/mpyw/laravel-file-errors/?branch=master)
 
 A tiny extension that reports validation error details about uploaded files
 
 ## Requirements
 
-- PHP: ^7.1
-- Laravel: ^5.6 || ^6.0 || ^7.0 || ^8.0
+- PHP: `^7.1`
+- Laravel: `^5.6 || ^6.0 || ^7.0 || ^8.0`
 
 ## Installing
 
