@@ -5,7 +5,7 @@ A tiny extension that reports validation error details about uploaded files
 ## Requirements
 
 - PHP: `^7.3 || ^8.0`
-- Laravel: `^6.0 || ^7.0 || ^8.0 || ^9.0`
+- Laravel: `^6.0 || ^7.0 || ^8.0 || ^9.0 || ^10.0`
 
 ## Installing
 
