@@ -18,7 +18,7 @@ trait IncludesFileErrorDetails
      * @param string $rule
      * @param array  $parameters
      */
-    public function addFailure($attribute, $rule, $parameters = [])
+    public function addFailure($attribute, $rule, $parameters = []): void
     {
         if ($rule === 'uploaded' && ($value = $this->getValue($attribute)) instanceof UploadedFile) {
             $rule = 'uploaded.' . UploadError::fromFile($value);
