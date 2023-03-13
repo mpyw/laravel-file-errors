@@ -13,7 +13,7 @@ class ValidationTest extends TestCase
      * @param  \Illuminate\Foundation\Application $app
      * @return array
      */
-    protected function getPackageProviders($app)
+    protected function getPackageProviders($app): array
     {
         return [
             ValidationServiceProvider::class,
@@ -56,7 +56,7 @@ class ValidationTest extends TestCase
 
     public function testTranslatedFailure(): void
     {
-        $this->app->instance('path.lang', __DIR__ . '/../resources/lang');
+        $this->app->instance('path.lang', __DIR__ . '/../lang');
 
         $file = UploadedFile::fake()->create('test');
 

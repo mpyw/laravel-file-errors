@@ -4,8 +4,8 @@ A tiny extension that reports validation error details about uploaded files
 
 ## Requirements
 
-- PHP: `^7.3 || ^8.0`
-- Laravel: `^6.0 || ^7.0 || ^8.0 || ^9.0 || ^10.0`
+- PHP: `^8.0`
+- Laravel: `^9.0 || ^10.0`
 
 ## Installing
 
@@ -17,8 +17,8 @@ composer require mpyw/laravel-file-errors
 
 ### 2. Customize translation
 
-Edit `resources/lang/{en,ja,...}/validation.php` in your project.    
-Feel free to copy from [resources/lang](https://github.com/mpyw/laravel-file-errors/tree/master/resources/lang).
+Edit `lang/{en,ja,...}/validation.php` in your project.    
+Feel free to copy from [lang](https://github.com/mpyw/laravel-file-errors/tree/master/lang).
 
 ```php
 <?php

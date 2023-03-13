@@ -44,67 +44,35 @@ class UploadError
     ];
 
     /**
-     * @var int
-     */
-    protected $code;
-
-    /**
-     * @var string
-     */
-    protected $title;
-
-    /**
      * UploadedFileError constructor.
-     *
-     * @param int    $code
-     * @param string $title
      */
-    public function __construct(int $code, string $title)
+    public function __construct(protected int $code, protected string $title)
     {
-        $this->code = $code;
-        $this->title = $title;
     }
 
-    /**
-     * @return int
-     */
     public function getCode(): int
     {
         return $this->code;
     }
 
-    /**
-     * @return string
-     */
     public function getTitle(): string
     {
         return $this->title;
     }
 
-    /**
-     * @return string
-     */
     public function __toString(): string
     {
         return $this->getTitle();
     }
 
-    /**
-     * @param  int    $code
-     * @return static
-     */
-    public static function fromCode(int $code)
+    public static function fromCode(int $code): static
     {
         return isset(static::MAP[$code])
             ? new static($code, static::MAP[$code])
             : static::unknown();
     }
 
-    /**
-     * @param  string $title
-     * @return static
-     */
-    public static function fromTitle(string $title)
+    public static function fromTitle(string $title): static
     {
         static $map;
 
@@ -117,19 +85,12 @@ class UploadError
             : static::unknown();
     }
 
-    /**
-     * @param  \Illuminate\Http\UploadedFile $file
-     * @return static
-     */
-    public static function fromFile(UploadedFile $file)
+    public static function fromFile(UploadedFile $file): static
     {
         return static::fromCode($file->getError());
     }
 
-    /**
-     * @return static
-     */
-    public static function unknown()
+    public static function unknown(): static
     {
         return new static(static::ERR_UNKNOWN, static::TITLE_UNKNOWN);
     }
