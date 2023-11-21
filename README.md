@@ -57,7 +57,8 @@ return [
 
 ## Basic Usage
 
-The default implementation is provided by `ValidationServiceProvider`, however, **package discovery is not available**.
+> [!IMPORTANT]
+> The default implementation is provided by `ValidationServiceProvider`, however, **package discovery is not available**.
 Be careful that you MUST register it in **`config/app.php`** by yourself.
 
 ```php
@@ -107,7 +108,8 @@ class UserController extends Controller
 
 ## Advanced Usage
 
-You can extend `Validator` with `IncludesFileErrorDetails` trait by yourself.
+> [!TIP]
+> You can extend `Validator` with `IncludesFileErrorDetails` trait by yourself.
 
 ```php
 <?php
